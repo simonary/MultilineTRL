@@ -1,6 +1,9 @@
 # MultilineTRL
 A tool for performing multiline TRL calibration, based on Matlab and with GUI.
 
+# Screenshoot
+![alt tag](https://raw.githubusercontent.com/simonary/MultilineTRL/master/MatlabApp/screenshot.png)
+
 # Usage
 1. Run .\MatlabApp\MultiLineTRL.mlappinstall to install it as an application in Matlab, or
 2. Run .\code\main.m directly.
