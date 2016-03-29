@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration target="target.mlapps" target-name="Package App" name="MultiLineTRL" location="E:\Lab\Co-Sim\Matlab\MultiLineTRL" file="E:\Lab\Co-Sim\Matlab\MultiLineTRL\MultiLineTRL.prj" build-checksum="4205200581">
+    <param.appname>MultiLineTRL</param.appname>
+    <param.authnamewatermark>Simon Wong</param.authnamewatermark>
+    <param.email>nerahc@gmail.com</param.email>
+    <param.company>Dept. EE, SJTU</param.company>
+    <param.icon>${PROJECT_ROOT}\MultiLineTRL_24.png</param.icon>
+    <param.summary>A compact tool of Multiline TRL de-embedding. Verified in Matlab R2013a.</param.summary>
+    <param.description>An example of CalKit file is inclued.</param.description>
+    <param.screenshot>${PROJECT_ROOT}\screenshot.png</param.screenshot>
+    <param.version>0.1</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>System Identification Toolbox</item>
+      <item>RF Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>-1</item>
+      <item>-1</item>
+      <item>-1</item>
+    </param.products.id>
+    <param.products.version>
+      <item>8.1</item>
+      <item>8.2</item>
+      <item>2.12</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}\MultiLineTRL.mlappinstall</param.output>
+    <param.guid>79573ca7-d7f6-410b-9478-874a02496c71</param.guid>
+    <unset>
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\main.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\ang.m</file>
+      <file>${PROJECT_ROOT}\AppendMsg.m</file>
+      <file>${PROJECT_ROOT}\BLUE.m</file>
+      <file>${PROJECT_ROOT}\CalAR.m</file>
+      <file>${PROJECT_ROOT}\CalBCAGamma.m</file>
+      <file>${PROJECT_ROOT}\CalKit_example\CalKitConf.txt</file>
+      <file>${PROJECT_ROOT}\CalKit_example\EstGamma.txt</file>
+      <file>${PROJECT_ROOT}\CalKit_example\L1.s2p</file>
+      <file>${PROJECT_ROOT}\CalKit_example\L2.s2p</file>
+      <file>${PROJECT_ROOT}\CalKit_example\L3.s2p</file>
+      <file>${PROJECT_ROOT}\CalKit_example\L4.s2p</file>
+      <file>${PROJECT_ROOT}\CalKit_example\Ra.s1p</file>
+      <file>${PROJECT_ROOT}\CalKit_example\Rb.s1p</file>
+      <file>${PROJECT_ROOT}\CalKit_example\T.s2p</file>
+      <file>${PROJECT_ROOT}\CalOptCommonLine.m</file>
+      <file>${PROJECT_ROOT}\CalSASB.m</file>
+      <file>${PROJECT_ROOT}\CalV.m</file>
+      <file>${PROJECT_ROOT}\KronDel.m</file>
+      <file>${PROJECT_ROOT}\main.fig</file>
+      <file>${PROJECT_ROOT}\mysqrt.m</file>
+      <file>${PROJECT_ROOT}\R2S.m</file>
+      <file>${PROJECT_ROOT}\ReadCalKitConf.m</file>
+      <file>${PROJECT_ROOT}\ReadCalKitSNP.m</file>
+      <file>${PROJECT_ROOT}\S2R.m</file>
+      <file>${PROJECT_ROOT}\writeGamma.m</file>
+      <file>${PROJECT_ROOT}\writeSP.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\CalKit_example</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file name="MultiLineTRL.mlappinstall" location="E:\Lab\Co-Sim\Matlab\MultiLineTRL" optional="false">E:\Lab\Co-Sim\Matlab\MultiLineTRL\MultiLineTRL.mlappinstall</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2013a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+      </toolboxes>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>true</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
+

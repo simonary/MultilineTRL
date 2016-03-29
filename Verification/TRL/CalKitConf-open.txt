@@ -1,0 +1,7 @@
+THRU   	T.s2p	0
+LINE    L1.s2p	3.50
+LINE    L2.s2p	14.38
+LINE    L3.s2p	22.07
+LINE    L4.s2p	29.87
+REFLECT	Ra-open.s1p	1
+REFLECT	Rb-open.s1p	2
