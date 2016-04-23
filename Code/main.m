@@ -108,7 +108,7 @@ function ReadCalKitObj_Callback(hObject, eventdata, handles)%#ok
                     DisbaleCalResult(handles,'newly defined CalKit');
                 end
                 % Activate the Start button if possible
-                if get(handles.RefTypeObj,'SelectedObject')
+                if ~isempty(get(handles.RefTypeObj,'SelectedObject'))
                     set(handles.StartCalObj,'enable','on')
                 else
                     set(handles.StartCalObj,'enable','off')
