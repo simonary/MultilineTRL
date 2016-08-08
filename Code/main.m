@@ -392,12 +392,12 @@ function ExportObj_Callback(hObject, eventdata, handles)%#ok
         ExportDir=uigetdir(handles.CalKitDir,'Select path to export');
     end
     if ExportDir
-        writeSP([ExportDir,'\MTRL-SA.s2p'], handles.SA, handles.Freq);
-        AppendMsg(handles.DispWinObj,['Exported to: ',ExportDir,'\MTRL-SA.s2p'])
-        writeSP([ExportDir,'\MTRL-SB.s2p'], handles.SB, handles.Freq);
-        AppendMsg(handles.DispWinObj,['Exported to: ',ExportDir,'\MTRL-SB.s2p'])
-        writeGamma([ExportDir,'\MTRL-Gamma.txt'], handles.Gamma1, handles.Freq);
-        AppendMsg(handles.DispWinObj,['Exported to: ',ExportDir,'\MTRL-Gamma.txt'])
+        writeSP([ExportDir, filesep, 'MTRL-SA.s2p'], handles.SA, handles.Freq);
+        AppendMsg(handles.DispWinObj,['Exported to: ',ExportDir, filesep,'MTRL-SA.s2p'])
+        writeSP([ExportDir,[filesep 'MTRL-SB.s2p']], handles.SB, handles.Freq);
+        AppendMsg(handles.DispWinObj,['Exported to: ',ExportDir, filesep, 'MTRL-SB.s2p'])
+        writeGamma([ExportDir, filesep, 'MTRL-Gamma.txt'], handles.Gamma1, handles.Freq);
+        AppendMsg(handles.DispWinObj,['Exported to: ',ExportDir, filesep, 'MTRL-Gamma.txt'])
         handles.ExportDir=ExportDir;
         AppendMsg(handles.DispWinObj,'Done.')
         guidata(hObject, handles);
@@ -455,8 +455,8 @@ function DeEmObj_Callback(hObject, eventdata, handles)%#ok
                 Y=[b,0;0,b^(-1)]*S2R(H*handles.SB(:,:,f)*H);
                 TRLDUT(:,:,f)=R2S(X\S2R(DUT(:,:,f))/Y);
             end
-            writeSP([DUTDir,OutputFolder,'\MTRL-',filelist{i}], TRLDUT, Freq)
-            AppendMsg(handles.DispWinObj,['MTRL file created: ',DUTDir,OutputFolder,'\MTRL-',filelist{i}])
+            writeSP([DUTDir,OutputFolder, filesep, 'MTRL-',filelist{i}], TRLDUT, Freq)
+            AppendMsg(handles.DispWinObj,['MTRL file created: ',DUTDir,OutputFolder, filesep, 'MTRL-',filelist{i}])
         end       
         AppendMsg(handles.DispWinObj,'Done.')
     end
